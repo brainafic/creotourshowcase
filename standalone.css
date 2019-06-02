@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     font-family: Helvetica, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    background: #f4f4f4 url('img/background.svg') repeat;
+    background: #0000FF url('img/background.svg') repeat;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -33,12 +33,12 @@
 
 .pnlm-grab {
     cursor: grab;
-    cursor: url('img/grab.svg') 12 8, default;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjYiIHdpZHRo%0D%0APSIyNiI+CjxwYXRoIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxcHgiIGZpbGw9IiNmZmYi%0D%0AIGQ9Im0xNS4zIDIwLjVzNi4zOC02LjczIDQuNjQtOC4yNC0zLjQ3IDEuMDEtMy40NyAxLjAxIDMu%0D%0ANjEtNS43MiAxLjQxLTYuNDljLTIuMi0wLjc2OS0zLjMzIDQuMzYtMy4zMyA0LjM2czAuODczLTUu%0D%0ANzYtMS4wNi01Ljc2LTEuNTggNS4zOS0xLjU4IDUuMzktMC41NzQtNC41OS0yLjE4LTQuMTJjLTEu%0D%0ANjEgMC40NjgtMC41NzIgNS41MS0wLjU3MiA1LjUxcy0xLjU4LTQuODktMi45My0zLjc5Yy0xLjM1%0D%0AIDEuMTEgMC4yNTggNS4yNSAwLjU3MiA2LjYyIDAuODM2IDIuNDMgMi4wMyAyLjk0IDIuMTcgNS41%0D%0ANSIvPgo8L3N2Zz4K') 12 8, default;
 }
 
 .pnlm-grabbing {
     cursor: grabbing;
-    cursor: url('img/grabbing.svg') 12 8, default;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjYiIHdpZHRo%0D%0APSIyNiI+CjxwYXRoIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxcHgiIGZpbGw9IiNmZmYi%0D%0AIGQ9Im0xNS4zIDIwLjVzNS4wNy01LjI5IDMuNzctNi43NGMtMS4zMS0xLjQ1LTIuNTMgMC4xNC0y%0D%0ALjUzIDAuMTRzMi43NC0zLjI5IDAuNTM1LTQuMDZjLTIuMi0wLjc2OS0yLjUyIDEuMy0yLjUyIDEu%0D%0AM3MwLjgxLTIuMTMtMS4xMi0yLjEzLTEuNTIgMS43Ny0xLjUyIDEuNzctMC4yNjEtMS41OS0xLjg3%0D%0ALTEuMTJjLTEuNjEgMC40NjgtMC44NzQgMi4xNy0wLjg3NCAyLjE3cy0wLjY1MS0xLjU1LTItMC40%0D%0ANDVjLTEuMzUgMS4xMS0wLjY4IDIuMjUtMC4zNjUgMy42MiAwLjgzNiAyLjQzIDIuMDMgMi45NCAy%0D%0ALjE3IDUuNTUiLz4KPC9zdmc+Cg==') 12 8, default;
 }
 
 .pnlm-sprite {
