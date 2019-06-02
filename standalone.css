@@ -42,7 +42,7 @@
 }
 
 .pnlm-sprite {
-    background-image: url('../Navi.svg');
+    background-image: url('Navi.svg');
 }
 
 .pnlm-container:-moz-full-screen {
