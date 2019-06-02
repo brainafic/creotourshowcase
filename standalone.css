@@ -42,7 +42,7 @@
 }
 
 .pnlm-sprite {
-    background-image: url('https://github.com/mpetroff/pannellum/blob/master/src/css/img/sprites.svg');
+    background-image: url('../Navi.svg');
 }
 
 .pnlm-container:-moz-full-screen {
