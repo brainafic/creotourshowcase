@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiresolution panorama</title>
+    <title>Tour</title>
     <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
     <style>
     #panorama {
-        width: 1200px;
-        height: 800px;
+        width: 600px;
+        height: 400px;
     }
     </style>
 </head>
@@ -18,15 +18,49 @@
 <div id="panorama"></div>
 <script>
 pannellum.viewer('panorama', {
-    "type": "multires",
-    "multiRes": {
-        "basePath": "https://raw.githubusercontent.com/brainafic/creotourshowcase/master/JPEG/1.jpg",
-        "path": "/%l/%s%y_%x",
-        "fallbackPath": "/fallback/%s",
-        "extension": "jpg",
-        "tileResolution": 512,
-        "maxLevel": 6,
-        "cubeResolution": 4096
+    "default": {
+        "firstScene": "circle",
+        "author": "Matthew Petroff",
+        "sceneFadeDuration": 1000
+    },
+
+    "scenes": {
+        "circle": {
+            "title": "Mason Circle",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "/JPEG/1.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Spring House or Dairy",
+                    "sceneId": "house"
+                }
+            ]
+        },
+
+        "house": {
+            "title": "Spring House or Dairy",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "/images/bma-0.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Mason Circle",
+                    "sceneId": "circle",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        }
     }
 });
 </script>
