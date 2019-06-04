@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creotour Integration Test</title>
+    <title>Auto load</title>
     <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
     <style>
     #panorama {
-        max-width: 1800px;
-        max-height: 1200px;
+        width: 600px;
+        height: 400px;
     }
     </style>
 </head>
@@ -19,11 +19,10 @@
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "JPEG/R0010020.jpg"
-
+    "panorama": "JPEG/R0010020.jpg",
+    "autoLoad": true
 });
 </script>
 
 </body>
-</html>>
-<!-- test -->
+</html>
